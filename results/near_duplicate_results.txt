@@ -2,5 +2,985 @@ NEAR-DUPLICATE IMAGE DETECTION RESULTS
 ======================================================================
 
 Hash distance threshold:5
-Near-duplicate pairs:0
+Near-duplicate pairs:79
+
+Pair 1
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\14.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\25.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 2
+==================================================
+Distance: 2
+Image 1: ..\data\train\Sheep\17.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\validation\Sheep\477334244_fb34fe6b5a_z-640x400.jpg
+Split 2: validation
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 3
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\23.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\26.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 4
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\32.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\jacob-sheep_Natural-England-Flickr.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 5
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\44.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\image-sheep-157992-2206021.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 6
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\44.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\img-8528-jpg-small_orig.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 7
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\45.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\dolly.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 8
+==================================================
+Distance: 2
+Image 1: ..\data\train\Sheep\5.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\lamb.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 9
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\6.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\appenninica-iStock_000055255130_Medium.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 10
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\8.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\validation\Sheep\ovelha-706x432.jpg
+Split 2: validation
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 11
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\95439-004-F76906F9.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\sheep-picture-141095-3623502.jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 12
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\a herd of sheep standing on top of a lush green field.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\photo-1554755209-85e44182e019.jpeg
+Split 2: train
+class 2: Sheep
+
+
+Pair 13
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\aja7s1fjy-i-1024x683.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\photo-1511117833895-4b473c0b85d6.jpeg
+Split 2: train
+class 2: Sheep
+
+
+Pair 14
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\aja7s1fjy-i-1024x683.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\four lambs on ground.jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 15
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\beige sheep.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\photo-1567984372640-664171e8042c.jpeg
+Split 2: train
+class 2: Sheep
+
+
+Pair 16
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\chimera-majestic-sheep-tongue.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\Funny sheep stock images.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 17
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\chimera-majestic-sheep-tongue.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\validation\Sheep\funny-sheep-portrait-of-sheep-showing-tongue.jpg
+Split 2: validation
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 18
+==================================================
+Distance: 2
+Image 1: ..\data\train\Sheep\Churro sheep royalty free stock photos.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\Navajo Churro Sheep  sheep stock pictures, royalty-free photos & images.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 19
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\com_ (5).jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\white goat beside fence.jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 20
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\com_.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\photo-1532623314721-cedde8730d26.jpeg
+Split 2: train
+class 2: Sheep
+
+
+Pair 21
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\com_.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\two white sheeps standing on mountain.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 22
+==================================================
+Distance: 4
+Image 1: ..\data\train\Sheep\cute-lamb-short-tail.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\validation\Sheep\lamb-2641216_960_720.jpg
+Split 2: validation
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 23
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\DBBTSWBF3VFD5F23E4I5EXMZ3Y.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\herd of sheep on green grass field during daytime.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 24
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\flock of sheep on the field.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\photo-1554895345-0be37fe1bc04.jpeg
+Split 2: train
+class 2: Sheep
+
+
+Pair 25
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\Flock of sheep royalty free stock images.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\sheep-slide.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 26
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\Free Flock of sheep standing on grassland in countryside Stock Photo.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\validation\Sheep\herd of sheep on green grass field during daytime (4).jpg
+Split 2: validation
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 27
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\Free Shallow Focus Photography of Sheep Stock Photo.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\pexels-photo-436793.jpeg_cs=srgb&dl=pexels-dan-hamill-436793.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 28
+==================================================
+Distance: 2
+Image 1: ..\data\train\Sheep\free-photo-of-close-up-of-flock-of-sheep.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\a herd of sheep standing on top of a grass covered field.jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 29
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\Funny sheep stock images.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\validation\Sheep\funny-sheep-portrait-of-sheep-showing-tongue.jpg
+Split 2: validation
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 30
+==================================================
+Distance: 2
+Image 1: ..\data\train\Sheep\gray ram on steppe.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\photo-1526030994690-40e26ad32a1c.jpeg
+Split 2: train
+class 2: Sheep
+
+
+Pair 31
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\herd of lambs.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\photo-1422363119751-1d2b703a7546.jpeg
+Split 2: train
+class 2: Sheep
+
+
+Pair 32
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\herd of sheep on green grass field during daytime (3).jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\photo-1618650337795-022af8a0a07f.jpeg
+Split 2: train
+class 2: Sheep
+
+
+Pair 33
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\herd of sheep on green grass field during daytime (7).jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\validation\Sheep\photo-1592408465270-9e669f6761f4.jpeg
+Split 2: validation
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 34
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\ie_ (2).jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\ie_ (3).jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 35
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\image-sheep-157992-2206021.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\img-8528-jpg-small_orig.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 36
+==================================================
+Distance: 4
+Image 1: ..\data\train\Sheep\kjell-jostein-sivertsen-gin8anbgwm8-unsplash-1-1.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\white sheeps on grass field.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 37
+==================================================
+Distance: 4
+Image 1: ..\data\train\Sheep\kjell-jostein-sivertsen-gin8anbgwm8-unsplash-1-1.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\photo-1571983747395-db386e3edd0d.jpeg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 38
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1456434893711-6a909e9cd81d.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\sheeps.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 39
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1484557985045-edf25e08da73.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\white sheep on green grass during daytime.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 40
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1497122123454-d63853ca2d39.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\two brown sheep standing on grass field at daytime.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 41
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1497122123454-d63853ca2d39.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\com_ (2).jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 42
+==================================================
+Distance: 4
+Image 1: ..\data\train\Sheep\photo-1497122123454-d63853ca2d39.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\Free Two White Sheeps Stock Photo.jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 43
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1511117833895-4b473c0b85d6.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\four lambs on ground.jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 44
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1532362091753-d53721a3e82c.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\brown sheep on green lawn grasses at daytime.jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 45
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1532623314721-cedde8730d26.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\two white sheeps standing on mountain.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 46
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1533415648777-407b626eb0fa.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\sheep on green grasses.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 47
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1535979863199-3c77338429a0.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\validation\Sheep\white and gray sheep lamb.jpg
+Split 2: validation
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 48
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1552688230-8220c7063d70.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\white sheep standing on green grass.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 49
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1575014912260-91c2b5ad7441.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\white sheep on field.jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 50
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1580764202408-27bd825b2818.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\white sheep on green grass during daytime (4).jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 51
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1588057078850-c7853b9188f8.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\sheep on green grass field during daytime.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 52
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1588164207355-8b81e4a8d351.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\white sheep on green grass field during daytime (9).jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 53
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1588672204561-5638420df69c.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\white sheep on green grass during daytime (2).jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 54
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1588942173353-0c53a1bf9081.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\white sheep on brown field during daytime.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 55
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1589246038332-658ff3450412.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\white sheep on green grass field during daytime.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 56
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1594842084383-04c2194e6216.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\white sheep on green grass field during daytime (6).jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 57
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1596557770430-92f21e94ee47.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\white sheep on brown grass field near body of water during daytime.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 58
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\photo-1627730433054-9ccb05ef8c6a.jpeg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\white sheep on green grass field during daytime (5).jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 59
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\rawImage (2).jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\rawImage.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 60
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\sheep (7).jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\sheep (8).jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 61
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\sheep on grass field.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\photo-1528709024086-98a7672e0b9d.jpeg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 62
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\sheep on grass field.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\photo-1528709024086-98a7672e0b9d.jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 63
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\sheep-2641172_1920.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\sheep-2641172_960_720.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 64
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\sheep1.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\validation\Sheep\24.jpg
+Split 2: validation
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 65
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\side-view-of-a-sheep-looking-away-against-white-background.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\Depositphotos_21606799_XL-1024x909.jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 66
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\two brown sheep standing on grass field at daytime.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\com_ (2).jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 67
+==================================================
+Distance: 4
+Image 1: ..\data\train\Sheep\two brown sheep standing on grass field at daytime.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\Free Two White Sheeps Stock Photo.jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 68
+==================================================
+Distance: 2
+Image 1: ..\data\train\Sheep\two white-and-red sheeps.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\train\Sheep\unsplash-image-nph59r9hkVg.jpg
+Split 2: train
+class 2: Sheep
+
+
+Pair 69
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\white sheep near the brown board.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\photo-1448227700746-d8eab5a1b9d7.jpeg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 70
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\white sheep on green grass during daytime (3).jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\photo-1586518532933-0c9631bca14f.jpeg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 71
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\white sheep on road.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\validation\Sheep\photo-1557881709-f5c255f44c2a.jpeg
+Split 2: validation
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 72
+==================================================
+Distance: 0
+Image 1: ..\data\train\Sheep\white sheeps on grass field.jpg
+Split 1: train
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\photo-1571983747395-db386e3edd0d.jpeg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 73
+==================================================
+Distance: 0
+Image 1: ..\data\validation\Sheep\DSCN6520-e1462262950648-1024x684.jpg
+Split 1: validation
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\4.jpg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 74
+==================================================
+Distance: 0
+Image 1: ..\data\validation\Sheep\white sheep on brown grass field during daytime (3).jpg
+Split 1: validation
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\photo-1610114753680-b6c875494dae.jpeg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 75
+==================================================
+Distance: 0
+Image 1: ..\data\validation\Sheep\white sheep on green grass field.jpg
+Split 1: validation
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\photo-1545310939-e7aae7217e00.jpeg
+Split 2: test
+class 2: Sheep
+
+Warning: Cross-Split near duplicate
+
+Pair 76
+==================================================
+Distance: 4
+Image 1: ..\data\test\Sheep\com_ (2).jpg
+Split 1: test
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\Free Two White Sheeps Stock Photo.jpg
+Split 2: test
+class 2: Sheep
+
+
+Pair 77
+==================================================
+Distance: 0
+Image 1: ..\data\test\Sheep\photo-1528709024086-98a7672e0b9d.jpeg
+Split 1: test
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\photo-1528709024086-98a7672e0b9d.jpg
+Split 2: test
+class 2: Sheep
+
+
+Pair 78
+==================================================
+Distance: 0
+Image 1: ..\data\test\Sheep\photo-1550607028-655c73869bcf.jpeg
+Split 1: test
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\white sheep sitting on grass.jpg
+Split 2: test
+class 2: Sheep
+
+
+Pair 79
+==================================================
+Distance: 0
+Image 1: ..\data\test\Sheep\photo-1567408890915-e5cf47339188.jpeg
+Split 1: test
+Class 1: Sheep
+
+Image 2: ..\data\test\Sheep\two white sheep on focus photography.jpg
+Split 2: test
+class 2: Sheep
+
 
