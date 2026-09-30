@@ -230,3 +230,45 @@ This makes the cleanup reversible and allows the dataset to be reviewed before p
 | Successfully quarantined | 285 |
 
 The dataset is now prepared for the next stage: **consistent preprocessing and model training/evaluation**.
+
+## 13. Manual Class-Balance Adjustment
+
+After duplicate cleanup, the dataset was manually redistributed across Train, Validation, and Test to reduce training-class imbalance without permanently deleting valid images.
+
+The current distribution is:
+
+| Class | Train | Validation | Test | Total |
+|---|---:|---:|---:|---:|
+| Buffalo | 571 | 271 | 271 | 1,113 |
+| Camel | 611 | 292 | 288 | 1,191 |
+| Cat | 611 | 610 | 612 | 1,833 |
+| Chicken | 583 | 227 | 269 | 1,079 |
+| Donkey | 759 | 85 | 192 | 1,036 |
+| Goat | 742 | 98 | 192 | 1,032 |
+| Horse | 761 | 233 | 234 | 1,228 |
+| Pig | 644 | 90 | 182 | 916 |
+| Sheep | 689 | 88 | 182 | 959 |
+| **Total** | **5,971** | **1,994** | **2,422** | **10,387** |
+
+The training set now ranges from **571 to 761 images per class**, reducing the previous class imbalance.
+
+The adjustment was performed by redistributing existing clean images between splits rather than permanently deleting valid images.
+
+---
+
+## 14. Training-Time Balancing
+
+The training set is not perfectly balanced, so **weighted sampling** will also be used during model training.
+
+The planned approach is:
+
+- Keep the current clean training images.
+- Assign higher sampling weights to smaller classes.
+- Avoid aggressive oversampling.
+- Apply suitable data augmentation during training.
+- Keep Validation and Test separate from training.
+- Evaluate using per-class precision, recall, F1-score, macro F1, and the confusion matrix.
+
+Weighted sampling changes how frequently images are presented during training without creating additional physical files or placing the same image in multiple splits.
+
+The effectiveness of weighted sampling will be evaluated using the final model metrics.
