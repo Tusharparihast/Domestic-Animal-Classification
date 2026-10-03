@@ -2,6 +2,8 @@
 
 A computer vision project for classifying domestic animals into 9 categories using deep learning and transfer learning.
 
+The project focuses not only on model training, but also on **dataset quality, duplicate detection, data leakage prevention, class imbalance handling, and reliable evaluation** before and during model development.
+
 ---
 
 ## Table of Contents
