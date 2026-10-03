@@ -67,6 +67,7 @@ Domestic-Animal-Classification/
 |   ├── README.md
 │
 ├── results/
+|   ├── visualizations/ 
 │
 ├── scripts/
 │   ├── dataset.py
