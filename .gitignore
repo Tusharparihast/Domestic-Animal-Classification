@@ -1,5 +1,16 @@
-data/
-classification/
-quarantine/
-classification-gpu/
+# python
 __pycache__/
+
+# dataset
+data/
+quarantine/
+
+# Virtual env
+classification-gpu/
+
+# Saved Models
+models/
+
+# Generated results
+results/data_check_results/
+results/ResNet_csv

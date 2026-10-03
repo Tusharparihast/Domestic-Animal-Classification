@@ -14,7 +14,7 @@ TEST_DIR = DATASET_ROOT / "test"
 
 Image_size = 224
 Batch_size = 32
-Num_workers = 2  # 2 separate processes will load and preprocess images in parallel while the model is training.
+Num_workers = 0  # 0 separate processes will load and preprocess images in parallel while the model is training.
 
 # Image Transformations
 Imagenet_mean = [0.485, 0.456, 0.406]
