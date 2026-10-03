@@ -6,294 +6,419 @@ import matplotlib.pyplot as plt
 # Paths
 RESULTS_DIR = Path("results")
 
-# ResNet50 CSV result files
-RESNET_RESULTS_DIR = (
-    RESULTS_DIR / "ResNet_csv"
-)
+RESNET_DIR = RESULTS_DIR / "ResNet_csv"
+EFFICIENTNET_DIR = RESULTS_DIR / "EfficientNet_csv"
 
-# Folder for generated visualization images
 VISUALIZATION_DIR = (RESULTS_DIR / "visualizations")
 
-VISUALIZATION_DIR.mkdir(
-    parents=True,
-    exist_ok=True
-)
+VISUALIZATION_DIR.mkdir(parents=True,exist_ok=True)
 
-# Input files
+# Helper function
+def save_plot(filename):
+    """
+    Save the current matplotlib figure
+    and close it.
+    """
+    output_path = (
+        VISUALIZATION_DIR / filename
+    )
 
-STAGE1_HISTORY_PATH = (
-    RESNET_RESULTS_DIR
-    / "resnet50_stage1_history.csv"
-)
+    plt.tight_layout()
 
-STAGE2_HISTORY_PATH = (
-    RESNET_RESULTS_DIR
-    / "resnet50_stage2_history.csv"
-)
+    plt.savefig(
+        output_path,
+        dpi=300,
+        bbox_inches="tight"
+    )
 
-CONFUSION_MATRIX_PATH = (
-    RESNET_RESULTS_DIR
-    / "resnet50_confusion_matrix.csv"
-)
+    plt.close()
+
+    print(f"Saved: {output_path}")
 
 # Load training histories
-stage1 = pd.read_csv(
-    STAGE1_HISTORY_PATH
+resnet_stage1 = pd.read_csv(
+    RESNET_DIR / "resnet50_stage1_history.csv"
 )
 
-stage2 = pd.read_csv(
-    STAGE2_HISTORY_PATH
+resnet_stage2 = pd.read_csv(
+    RESNET_DIR / "resnet50_stage2_history.csv"
 )
 
-# Stage 1 — Loss
-plt.figure(figsize=(10, 6))
+efficientnet_stage1 = pd.read_csv(
+    EFFICIENTNET_DIR / "efficientnet_b0_stage1_history.csv"
+)
+
+efficientnet_stage2 = pd.read_csv(
+    EFFICIENTNET_DIR / "efficientnet_b0_stage2_history.csv"
+)
+
+# ResNet50 Stage 1 - Loss
+plt.figure(figsize=(8, 5))
 
 plt.plot(
-    stage1["epoch"],
-    stage1["train_loss"],
-    marker="o",
+    resnet_stage1["epoch"],
+    resnet_stage1["train_loss"],
     label="Training Loss"
 )
 
 plt.plot(
-    stage1["epoch"],
-    stage1["val_loss"],
-    marker="o",
+    resnet_stage1["epoch"],
+    resnet_stage1["val_loss"],
     label="Validation Loss"
 )
-plt.title("ResNet50 Stage 1 Loss")
+
 plt.xlabel("Epoch")
 plt.ylabel("Loss")
+plt.title("ResNet50 Stage 1 Loss")
 plt.legend()
 plt.grid(alpha=0.3)
-plt.tight_layout()
-plt.savefig(
-    VISUALIZATION_DIR
-    / "resnet50_stage1_loss.png",
-    dpi=300,
-    bbox_inches="tight"
-)
 
-plt.close()
+save_plot("resnet50_stage1_loss.png")
 
-
-# Stage 1 — Accuracy
-plt.figure(figsize=(10, 6))
+# ResNet50 Stage 1 - Accuracy
+plt.figure(figsize=(8, 5))
 plt.plot(
-    stage1["epoch"],
-    stage1["train_accuracy"],
-    marker="o",
+    resnet_stage1["epoch"],
+    resnet_stage1["train_accuracy"],
     label="Training Accuracy"
 )
 
 plt.plot(
-    stage1["epoch"],
-    stage1["val_accuracy"],
-    marker="o",
+    resnet_stage1["epoch"],
+    resnet_stage1["val_accuracy"],
     label="Validation Accuracy"
 )
 
-plt.title("ResNet50 Stage 1 Accuracy")
-
 plt.xlabel("Epoch")
 plt.ylabel("Accuracy (%)")
+plt.title("ResNet50 Stage 1 Accuracy")
 plt.legend()
 plt.grid(alpha=0.3)
-plt.tight_layout()
-plt.savefig(
-    VISUALIZATION_DIR
-    / "resnet50_stage1_accuracy.png",
-    dpi=300,
-    bbox_inches="tight"
-)
 
-plt.close()
+save_plot("resnet50_stage1_accuracy.png")
 
+# ResNet50 Stage 1 - Macro F1
+plt.figure(figsize=(8, 5))
 
-# Stage 1 — Validation Macro F1
-plt.figure(figsize=(10, 6))
 plt.plot(
-    stage1["epoch"],
-    stage1["val_macro_f1"],
-    marker="o",
+    resnet_stage1["epoch"],
+    resnet_stage1["val_macro_f1"],
     label="Validation Macro F1"
 )
 
-plt.title("ResNet50 Stage 1 Validation Macro F1")
 plt.xlabel("Epoch")
 plt.ylabel("Macro F1")
+plt.title("ResNet50 Stage 1 Validation Macro F1")
 plt.legend()
 plt.grid(alpha=0.3)
-plt.tight_layout()
-plt.savefig(
-    VISUALIZATION_DIR
-    / "resnet50_stage1_macro_f1.png",
-    dpi=300,
-    bbox_inches="tight"
-)
 
-plt.close()
+save_plot("resnet50_stage1_macro_f1.png")
 
-
-# Stage 2 — Loss
-plt.figure(figsize=(10, 6))
+# ResNet50 Stage 2 - Loss
+plt.figure(figsize=(8, 5))
 
 plt.plot(
-    stage2["epoch"],
-    stage2["train_loss"],
-    marker="o",
+    resnet_stage2["epoch"],
+    resnet_stage2["train_loss"],
     label="Training Loss"
 )
 
 plt.plot(
-    stage2["epoch"],
-    stage2["val_loss"],
-    marker="o",
+    resnet_stage2["epoch"],
+    resnet_stage2["val_loss"],
     label="Validation Loss"
 )
 
-plt.title("ResNet50 Stage 2 Loss")
 plt.xlabel("Epoch")
 plt.ylabel("Loss")
+plt.title("ResNet50 Stage 2 Loss")
 plt.legend()
 plt.grid(alpha=0.3)
-plt.tight_layout()
 
-plt.savefig(
-    VISUALIZATION_DIR
-    / "resnet50_stage2_loss.png",
-    dpi=300,
-    bbox_inches="tight"
-)
+save_plot("resnet50_stage2_loss.png")
 
-plt.close()
-
-# Stage 2 — Accuracy
-plt.figure(figsize=(10, 6))
+# ResNet50 Stage 2 - Accuracy
+plt.figure(figsize=(8, 5))
 
 plt.plot(
-    stage2["epoch"],
-    stage2["train_accuracy"],
-    marker="o",
+    resnet_stage2["epoch"],
+    resnet_stage2["train_accuracy"],
     label="Training Accuracy"
 )
 
 plt.plot(
-    stage2["epoch"],
-    stage2["val_accuracy"],
-    marker="o",
+    resnet_stage2["epoch"],
+    resnet_stage2["val_accuracy"],
     label="Validation Accuracy"
 )
 
-plt.title("ResNet50 Stage 2 Accuracy")
 plt.xlabel("Epoch")
 plt.ylabel("Accuracy (%)")
+plt.title("ResNet50 Stage 2 Accuracy")
 plt.legend()
 plt.grid(alpha=0.3)
-plt.tight_layout()
-plt.savefig(
-    VISUALIZATION_DIR
-    / "resnet50_stage2_accuracy.png",
-    dpi=300,
-    bbox_inches="tight"
-)
 
-plt.close()
+save_plot("resnet50_stage2_accuracy.png")
 
-# Stage 2 — Validation Macro F1
-plt.figure(figsize=(10, 6))
-
+# ResNet50 Stage 2 - Macro F1
+plt.figure(figsize=(8, 5))
 plt.plot(
-    stage2["epoch"],
-    stage2["val_f1"],
-    marker="o",
-    label="Validation  F1"
-)
-
-plt.title(
-    "ResNet50 Stage 2 Validation F1"
+    resnet_stage2["epoch"],
+    resnet_stage2["val_f1"],
+    label="Validation Macro F1"
 )
 
 plt.xlabel("Epoch")
-plt.ylabel("F1")
-
+plt.ylabel("Macro F1")
+plt.title("ResNet50 Stage 2 Validation Macro F1")
 plt.legend()
 plt.grid(alpha=0.3)
 
-plt.tight_layout()
+save_plot("resnet50_stage2_macro_f1.png")
 
-plt.savefig(
-    VISUALIZATION_DIR
-    / "resnet50_stage2_f1.png",
-    dpi=300,
-    bbox_inches="tight"
+# EfficientNet-B0 Stage 1 - Loss
+plt.figure(figsize=(8, 5))
+
+plt.plot(
+    efficientnet_stage1["epoch"],
+    efficientnet_stage1["train_loss"],
+    label="Training Loss"
 )
 
-plt.close()
-
-# Load confusion matrix
-
-confusion_matrix = pd.read_csv(
-    CONFUSION_MATRIX_PATH,
-    index_col=0
+plt.plot(
+    efficientnet_stage1["epoch"],
+    efficientnet_stage1["val_loss"],
+    label="Validation Loss"
 )
 
-# Confusion Matrix Visualization
+plt.xlabel("Epoch")
+plt.ylabel("Loss")
+plt.title("EfficientNet-B0 Stage 1 Loss")
+plt.legend()
+plt.grid(alpha=0.3)
 
-plt.figure(figsize=(10, 8))
+save_plot("efficientnet_b0_stage1_loss.png")
 
-plt.imshow(
-    confusion_matrix,
-    interpolation="nearest"
+# EfficientNet-B0 Stage 1 - Accuracy
+plt.figure(figsize=(8, 5))
+
+plt.plot(
+    efficientnet_stage1["epoch"],
+    efficientnet_stage1["train_accuracy"],
+    label="Training Accuracy"
 )
 
-plt.title("ResNet50 Test Set Confusion Matrix")
-plt.colorbar()
-
-classes = confusion_matrix.columns
-
-plt.xticks(
-    range(len(classes)),
-    classes,
-    rotation=45,
-    ha="right"
+plt.plot(
+    efficientnet_stage1["epoch"],
+    efficientnet_stage1["val_accuracy"],
+    label="Validation Accuracy"
 )
 
-plt.yticks(range(len(classes)), classes)
+plt.xlabel("Epoch")
+plt.ylabel("Accuracy (%)")
+plt.title("EfficientNet-B0 Stage 1 Accuracy")
+plt.legend()
+plt.grid(alpha=0.3)
+save_plot("efficientnet_b0_stage1_accuracy.png")
 
-# Add numerical values inside the matrix
-for i in range(len(confusion_matrix)):
-    for j in range(len(confusion_matrix.columns)):
+# EfficientNet-B0 Stage 1 - Macro F1
+plt.figure(figsize=(8, 5))
 
-        plt.text(
-            j,
-            i,
-            confusion_matrix.iloc[i, j],
-            ha="center",
-            va="center"
-        )
-
-plt.xlabel("Predicted Class")
-plt.ylabel("True Class")
-plt.tight_layout()
-plt.savefig(
-    VISUALIZATION_DIR
-    / "resnet50_confusion_matrix.png",
-    dpi=300,
-    bbox_inches="tight"
+plt.plot(
+    efficientnet_stage1["epoch"],
+    efficientnet_stage1["val_macro_f1"],
+    label="Validation Macro F1"
 )
 
-plt.close()
+plt.xlabel("Epoch")
+plt.ylabel("Macro F1")
+plt.title("EfficientNet-B0 Stage 1 Validation Macro F1")
+plt.legend()
+plt.grid(alpha=0.3)
+save_plot("efficientnet_b0_stage1_macro_f1.png")
 
-# Completion message
+# EfficientNet-B0 Stage 2 - Loss
+plt.figure(figsize=(8, 5))
 
-print("\nResNet50 visualizations created successfully.")
-print(f"Visualization directory: {VISUALIZATION_DIR}")
-print("\nGenerated files:")
-print("- resnet50_stage1_loss.png")
-print("- resnet50_stage1_accuracy.png")
-print("- resnet50_stage1_f1.png")
-print("- resnet50_stage2_loss.png")
-print("- resnet50_stage2_accuracy.png")
-print("- resnet50_stage2_f1.png")
-print("- resnet50_confusion_matrix.png")
+plt.plot(
+    efficientnet_stage2["epoch"],
+    efficientnet_stage2["train_loss"],
+    label="Training Loss"
+)
+
+plt.plot(
+    efficientnet_stage2["epoch"],
+    efficientnet_stage2["val_loss"],
+    label="Validation Loss"
+)
+
+plt.xlabel("Epoch")
+plt.ylabel("Loss")
+plt.title("EfficientNet-B0 Stage 2 Loss")
+plt.legend()
+plt.grid(alpha=0.3)
+save_plot("efficientnet_b0_stage2_loss.png")
+
+# EfficientNet-B0 Stage 2 - Accuracy
+plt.figure(figsize=(8, 5))
+
+plt.plot(
+    efficientnet_stage2["epoch"],
+    efficientnet_stage2["train_accuracy"],
+    label="Training Accuracy"
+)
+
+plt.plot(
+    efficientnet_stage2["epoch"],
+    efficientnet_stage2["val_accuracy"],
+    label="Validation Accuracy"
+)
+
+plt.xlabel("Epoch")
+plt.ylabel("Accuracy (%)")
+plt.title("EfficientNet-B0 Stage 2 Accuracy")
+plt.legend()
+plt.grid(alpha=0.3)
+save_plot("efficientnet_b0_stage2_accuracy.png")
+
+# EfficientNet-B0 Stage 2 - Macro F1
+plt.figure(figsize=(8, 5))
+
+plt.plot(
+    efficientnet_stage2["epoch"],
+    efficientnet_stage2["val_macro_f1"],
+    label="Validation Macro F1"
+)
+
+plt.xlabel("Epoch")
+plt.ylabel("Macro F1")
+plt.title("EfficientNet-B0 Stage 2 Validation Macro F1")
+plt.legend()
+plt.grid(alpha=0.3)
+
+save_plot("efficientnet_b0_stage2_macro_f1.png")
+
+# Final model comparison
+comparison_path = (RESULTS_DIR /"model_comparison.csv")
+
+if comparison_path.exists():
+    comparison = pd.read_csv(comparison_path)
+    metrics = [
+        "Accuracy",
+        "Macro Precision",
+        "Macro Recall",
+        "Macro F1",
+        "Weighted F1",
+    ]
+
+    resnet = comparison[
+        comparison["Model"] ==
+        "resnet50"
+    ].iloc[0]
+
+    efficientnet = comparison[
+        comparison["Model"] ==
+        "efficientnet_b0"
+    ].iloc[0]
+
+    # Comparison chart
+    x = range(len(metrics))
+    width = 0.35
+    resnet_positions = [
+        value - width / 2
+        for value in x
+    ]
+
+    efficientnet_positions = [
+        value + width / 2
+        for value in x
+    ]
+
+    resnet_values = [
+        resnet[metric]
+        for metric in metrics
+    ]
+
+    efficientnet_values = [
+        efficientnet[metric]
+        for metric in metrics
+    ]
+
+    plt.figure(figsize=(11, 6))
+    plt.bar(
+        resnet_positions,
+        resnet_values,
+        width=width,
+        label="ResNet50"
+    )
+
+    plt.bar(
+        efficientnet_positions,
+        efficientnet_values,
+        width=width,
+        label="EfficientNet-B0"
+    )
+
+    plt.xticks(
+        list(x),
+        metrics,
+        rotation=20
+    )
+
+    plt.xlabel("Evaluation Metric")
+    plt.ylabel("Score")
+    plt.title(
+        "ResNet50 vs EfficientNet-B0 "
+        "Test Performance"
+    )
+
+    plt.ylim(0,1.0)
+    plt.legend()
+    plt.grid(axis="y",alpha=0.3)
+
+    # Add values
+    for positions, values in [
+        (
+            resnet_positions,
+            resnet_values
+        ),
+
+        (
+            efficientnet_positions,
+            efficientnet_values
+        ),
+
+    ]:
+        for position, value in zip(
+            positions,
+            values
+        ):
+
+            plt.text(
+                position,
+                value + 0.01,
+                f"{value:.3f}",
+                ha="center",
+                va="bottom",
+                fontsize=9
+            )
+
+    save_plot(
+        "model_comparison.png"
+    )
+
+else:
+    print(
+        "\nModel comparison CSV not found."
+    )
+
+    print(
+        "Run evaluate.py first to create "
+        "the final model comparison."
+    )
+
+# Final message
+print(
+    "\nAll training and evaluation "
+    "visualizations generated successfully."
+)
