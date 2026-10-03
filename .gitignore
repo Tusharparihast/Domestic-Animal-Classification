@@ -14,3 +14,5 @@ models/
 # Generated results
 results/data_check_results/
 results/ResNet_csv
+results/EfficientNet_csv
+results/model_comparison.csv
