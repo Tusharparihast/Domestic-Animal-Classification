@@ -387,27 +387,131 @@ results/visualizations/
 
 ### ResNet50
 
-- `resnet50_stage1_loss.png`
-- `resnet50_stage1_accuracy.png`
-- `resnet50_stage1_macro_f1.png`
-- `resnet50_stage2_loss.png`
-- `resnet50_stage2_accuracy.png`
-- `resnet50_stage2_macro_f1.png`
-- `resnet50_confusion_matrix.png`
+#### Stage 1 — Transfer Learning
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="results/visualizations/resnet50_stage1_loss.png">
+        <img src="results/visualizations/resnet50_stage1_loss.png" width="250">
+      </a><br>
+      <b>Loss</b>
+    </td>
+    <td align="center">
+      <a href="results/visualizations/resnet50_stage1_accuracy.png">
+        <img src="results/visualizations/resnet50_stage1_accuracy.png" width="250">
+      </a><br>
+      <b>Accuracy</b>
+    </td>
+    <td align="center">
+      <a href="results/visualizations/resnet50_stage1_macro_f1.png">
+        <img src="results/visualizations/resnet50_stage1_macro_f1.png" width="250">
+      </a><br>
+      <b>Macro F1</b>
+    </td>
+  </tr>
+</table>
+
+#### Stage 2 — Fine-Tuning
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="results/visualizations/resnet50_stage2_loss.png">
+        <img src="results/visualizations/resnet50_stage2_loss.png" width="250">
+      </a><br>
+      <b>Loss</b>
+    </td>
+    <td align="center">
+      <a href="results/visualizations/resnet50_stage2_accuracy.png">
+        <img src="results/visualizations/resnet50_stage2_accuracy.png" width="250">
+      </a><br>
+      <b>Accuracy</b>
+    </td>
+    <td align="center">
+      <a href="results/visualizations/resnet50_stage2_macro_f1.png">
+        <img src="results/visualizations/resnet50_stage2_macro_f1.png" width="250">
+      </a><br>
+      <b>Macro F1</b>
+    </td>
+  </tr>
+</table>
+
+#### Confusion Matrix
+
+<p align="center">
+  <a href="results/visualizations/resnet50_confusion_matrix.png">
+    <img src="results/visualizations/resnet50_confusion_matrix.png" width="600">
+  </a>
+</p>
 
 ### EfficientNet-B0
 
-- `efficientnet_b0_stage1_loss.png`
-- `efficientnet_b0_stage1_accuracy.png`
-- `efficientnet_b0_stage1_macro_f1.png`
-- `efficientnet_b0_stage2_loss.png`
-- `efficientnet_b0_stage2_accuracy.png`
-- `efficientnet_b0_stage2_macro_f1.png`
-- `efficientnet_b0_confusion_matrix.png`
+#### Stage 1 — Transfer Learning
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="results/visualizations/efficientnet_b0_stage1_loss.png">
+        <img src="results/visualizations/efficientnet_b0_stage1_loss.png" width="250">
+      </a><br>
+      <b>Loss</b>
+    </td>
+    <td align="center">
+      <a href="results/visualizations/efficientnet_b0_stage1_accuracy.png">
+        <img src="results/visualizations/efficientnet_b0_stage1_accuracy.png" width="250">
+      </a><br>
+      <b>Accuracy</b>
+    </td>
+    <td align="center">
+      <a href="results/visualizations/efficientnet_b0_stage1_macro_f1.png">
+        <img src="results/visualizations/efficientnet_b0_stage1_macro_f1.png" width="250">
+      </a><br>
+      <b>Macro F1</b>
+    </td>
+  </tr>
+</table>
+
+#### Stage 2 — Fine-Tuning
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="results/visualizations/efficientnet_b0_stage2_loss.png">
+        <img src="results/visualizations/efficientnet_b0_stage2_loss.png" width="250">
+      </a><br>
+      <b>Loss</b>
+    </td>
+    <td align="center">
+      <a href="results/visualizations/efficientnet_b0_stage2_accuracy.png">
+        <img src="results/visualizations/efficientnet_b0_stage2_accuracy.png" width="250">
+      </a><br>
+      <b>Accuracy</b>
+    </td>
+    <td align="center">
+      <a href="results/visualizations/efficientnet_b0_stage2_macro_f1.png">
+        <img src="results/visualizations/efficientnet_b0_stage2_macro_f1.png" width="250">
+      </a><br>
+      <b>Macro F1</b>
+    </td>
+  </tr>
+</table>
+
+#### Confusion Matrix
+
+<p align="center">
+  <a href="results/visualizations/efficientnet_b0_confusion_matrix.png">
+    <img src="results/visualizations/efficientnet_b0_confusion_matrix.png" width="600">
+  </a>
+</p>
 
 ### Model Comparison
 
-- `model_comparison.png`
+<p align="center">
+  <a href="results/visualizations/model_comparison.png">
+    <img src="results/visualizations/model_comparison.png" width="700">
+  </a>
+</p>
 
 The visualization pipeline is implemented in:
 
