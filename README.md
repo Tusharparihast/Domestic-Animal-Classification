@@ -392,19 +392,21 @@ results/visualizations/
   <tr>
     <td align="center">
       <a href="results/visualizations/resnet50_stage1_loss.png">
-        <img src="results/visualizations/resnet50_stage1_loss.png" width="250">
+        <img src="results/visualizations/resnet50_stage1_loss.png" width="380">
       </a><br>
       <b>Loss</b>
     </td>
     <td align="center">
       <a href="results/visualizations/resnet50_stage1_accuracy.png">
-        <img src="results/visualizations/resnet50_stage1_accuracy.png" width="250">
+        <img src="results/visualizations/resnet50_stage1_accuracy.png" width="380">
       </a><br>
       <b>Accuracy</b>
     </td>
-    <td align="center">
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
       <a href="results/visualizations/resnet50_stage1_macro_f1.png">
-        <img src="results/visualizations/resnet50_stage1_macro_f1.png" width="250">
+        <img src="results/visualizations/resnet50_stage1_macro_f1.png" width="380">
       </a><br>
       <b>Macro F1</b>
     </td>
@@ -417,24 +419,28 @@ results/visualizations/
   <tr>
     <td align="center">
       <a href="results/visualizations/resnet50_stage2_loss.png">
-        <img src="results/visualizations/resnet50_stage2_loss.png" width="250">
+        <img src="results/visualizations/resnet50_stage2_loss.png" width="380">
       </a><br>
       <b>Loss</b>
     </td>
     <td align="center">
       <a href="results/visualizations/resnet50_stage2_accuracy.png">
-        <img src="results/visualizations/resnet50_stage2_accuracy.png" width="250">
+        <img src="results/visualizations/resnet50_stage2_accuracy.png" width="380">
       </a><br>
       <b>Accuracy</b>
     </td>
-    <td align="center">
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
       <a href="results/visualizations/resnet50_stage2_macro_f1.png">
-        <img src="results/visualizations/resnet50_stage2_macro_f1.png" width="250">
+        <img src="results/visualizations/resnet50_stage2_macro_f1.png" width="380">
       </a><br>
       <b>Macro F1</b>
     </td>
   </tr>
 </table>
+
+> **Note:** In Stage 2, training loss keeps decreasing while validation loss fluctuates upward, so the checkpoint was selected by validation Macro F1 (epoch 2) rather than taking the final epoch. Click any plot to view it at full size.
 
 #### Confusion Matrix
 
@@ -452,19 +458,21 @@ results/visualizations/
   <tr>
     <td align="center">
       <a href="results/visualizations/efficientnet_b0_stage1_loss.png">
-        <img src="results/visualizations/efficientnet_b0_stage1_loss.png" width="250">
+        <img src="results/visualizations/efficientnet_b0_stage1_loss.png" width="380">
       </a><br>
       <b>Loss</b>
     </td>
     <td align="center">
       <a href="results/visualizations/efficientnet_b0_stage1_accuracy.png">
-        <img src="results/visualizations/efficientnet_b0_stage1_accuracy.png" width="250">
+        <img src="results/visualizations/efficientnet_b0_stage1_accuracy.png" width="380">
       </a><br>
       <b>Accuracy</b>
     </td>
-    <td align="center">
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
       <a href="results/visualizations/efficientnet_b0_stage1_macro_f1.png">
-        <img src="results/visualizations/efficientnet_b0_stage1_macro_f1.png" width="250">
+        <img src="results/visualizations/efficientnet_b0_stage1_macro_f1.png" width="380">
       </a><br>
       <b>Macro F1</b>
     </td>
@@ -477,19 +485,21 @@ results/visualizations/
   <tr>
     <td align="center">
       <a href="results/visualizations/efficientnet_b0_stage2_loss.png">
-        <img src="results/visualizations/efficientnet_b0_stage2_loss.png" width="250">
+        <img src="results/visualizations/efficientnet_b0_stage2_loss.png" width="380">
       </a><br>
       <b>Loss</b>
     </td>
     <td align="center">
       <a href="results/visualizations/efficientnet_b0_stage2_accuracy.png">
-        <img src="results/visualizations/efficientnet_b0_stage2_accuracy.png" width="250">
+        <img src="results/visualizations/efficientnet_b0_stage2_accuracy.png" width="380">
       </a><br>
       <b>Accuracy</b>
     </td>
-    <td align="center">
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
       <a href="results/visualizations/efficientnet_b0_stage2_macro_f1.png">
-        <img src="results/visualizations/efficientnet_b0_stage2_macro_f1.png" width="250">
+        <img src="results/visualizations/efficientnet_b0_stage2_macro_f1.png" width="380">
       </a><br>
       <b>Macro F1</b>
     </td>
