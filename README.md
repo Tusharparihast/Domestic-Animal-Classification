@@ -1,8 +1,8 @@
 # Domestic Animal Classification
 
-A deep learning project for classifying domestic animals into **9 categories** using transfer learning, fine-tuning, and pretrained CNN architectures.
+A deep learning project for classifying domestic animals into **9 categories using a custom-prepared dataset**, developed through dataset curation, quality analysis, transfer learning, and fine-tuning of pretrained CNN architectures.
 
-The project emphasizes not only model performance, but also **dataset quality, duplicate detection, cross-split leakage prevention, class imbalance handling, reproducible training, and reliable evaluation**.
+The project focuses not only on model performance, but also on **building and validating a reliable custom dataset**, including image quality checks, duplicate and near-duplicate removal, cross-split leakage prevention, class distribution analysis, class imbalance handling, reproducible training, and systematic model evaluation.
 
 ---
 
