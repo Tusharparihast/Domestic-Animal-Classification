@@ -384,136 +384,6 @@ The repository keeps the final visualization outputs under:
 results/visualizations/
 ```
 
-### ResNet50
-
-#### Stage 1 — Transfer Learning
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="results/visualizations/resnet50_stage1_loss.png">
-        <img src="results/visualizations/resnet50_stage1_loss.png" width="380">
-      </a><br>
-      <b>Loss</b>
-    </td>
-    <td align="center">
-      <a href="results/visualizations/resnet50_stage1_accuracy.png">
-        <img src="results/visualizations/resnet50_stage1_accuracy.png" width="380">
-      </a><br>
-      <b>Accuracy</b>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2">
-      <a href="results/visualizations/resnet50_stage1_macro_f1.png">
-        <img src="results/visualizations/resnet50_stage1_macro_f1.png" width="380">
-      </a><br>
-      <b>Macro F1</b>
-    </td>
-  </tr>
-</table>
-
-#### Stage 2 — Fine-Tuning
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="results/visualizations/resnet50_stage2_loss.png">
-        <img src="results/visualizations/resnet50_stage2_loss.png" width="380">
-      </a><br>
-      <b>Loss</b>
-    </td>
-    <td align="center">
-      <a href="results/visualizations/resnet50_stage2_accuracy.png">
-        <img src="results/visualizations/resnet50_stage2_accuracy.png" width="380">
-      </a><br>
-      <b>Accuracy</b>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2">
-      <a href="results/visualizations/resnet50_stage2_macro_f1.png">
-        <img src="results/visualizations/resnet50_stage2_macro_f1.png" width="380">
-      </a><br>
-      <b>Macro F1</b>
-    </td>
-  </tr>
-</table>
-
-> **Note:** In Stage 2, training loss keeps decreasing while validation loss fluctuates upward, so the checkpoint was selected by validation Macro F1 (epoch 2) rather than taking the final epoch. Click any plot to view it at full size.
-
-#### Confusion Matrix
-
-<p align="center">
-  <a href="results/visualizations/resnet50_confusion_matrix.png">
-    <img src="results/visualizations/resnet50_confusion_matrix.png" width="600">
-  </a>
-</p>
-
-### EfficientNet-B0
-
-#### Stage 1 — Transfer Learning
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="results/visualizations/efficientnet_b0_stage1_loss.png">
-        <img src="results/visualizations/efficientnet_b0_stage1_loss.png" width="380">
-      </a><br>
-      <b>Loss</b>
-    </td>
-    <td align="center">
-      <a href="results/visualizations/efficientnet_b0_stage1_accuracy.png">
-        <img src="results/visualizations/efficientnet_b0_stage1_accuracy.png" width="380">
-      </a><br>
-      <b>Accuracy</b>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2">
-      <a href="results/visualizations/efficientnet_b0_stage1_macro_f1.png">
-        <img src="results/visualizations/efficientnet_b0_stage1_macro_f1.png" width="380">
-      </a><br>
-      <b>Macro F1</b>
-    </td>
-  </tr>
-</table>
-
-#### Stage 2 — Fine-Tuning
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="results/visualizations/efficientnet_b0_stage2_loss.png">
-        <img src="results/visualizations/efficientnet_b0_stage2_loss.png" width="380">
-      </a><br>
-      <b>Loss</b>
-    </td>
-    <td align="center">
-      <a href="results/visualizations/efficientnet_b0_stage2_accuracy.png">
-        <img src="results/visualizations/efficientnet_b0_stage2_accuracy.png" width="380">
-      </a><br>
-      <b>Accuracy</b>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2">
-      <a href="results/visualizations/efficientnet_b0_stage2_macro_f1.png">
-        <img src="results/visualizations/efficientnet_b0_stage2_macro_f1.png" width="380">
-      </a><br>
-      <b>Macro F1</b>
-    </td>
-  </tr>
-</table>
-
-#### Confusion Matrix
-
-<p align="center">
-  <a href="results/visualizations/efficientnet_b0_confusion_matrix.png">
-    <img src="results/visualizations/efficientnet_b0_confusion_matrix.png" width="600">
-  </a>
-</p>
-
 ### Model Comparison
 
 <p align="center">
@@ -521,6 +391,22 @@ results/visualizations/
     <img src="results/visualizations/model_comparison.png" width="700">
   </a>
 </p>
+
+### Training Curves and Confusion Matrices
+
+Individual plots are available in [`results/visualizations/`](results/visualizations/).
+
+**ResNet50**
+
+- Stage 1: [Loss](results/visualizations/resnet50_stage1_loss.png) · [Accuracy](results/visualizations/resnet50_stage1_accuracy.png) · [Macro F1](results/visualizations/resnet50_stage1_macro_f1.png)
+- Stage 2: [Loss](results/visualizations/resnet50_stage2_loss.png) · [Accuracy](results/visualizations/resnet50_stage2_accuracy.png) · [Macro F1](results/visualizations/resnet50_stage2_macro_f1.png)
+- [Confusion Matrix](results/visualizations/resnet50_confusion_matrix.png)
+
+**EfficientNet-B0**
+
+- Stage 1: [Loss](results/visualizations/efficientnet_b0_stage1_loss.png) · [Accuracy](results/visualizations/efficientnet_b0_stage1_accuracy.png) · [Macro F1](results/visualizations/efficientnet_b0_stage1_macro_f1.png)
+- Stage 2: [Loss](results/visualizations/efficientnet_b0_stage2_loss.png) · [Accuracy](results/visualizations/efficientnet_b0_stage2_accuracy.png) · [Macro F1](results/visualizations/efficientnet_b0_stage2_macro_f1.png)
+- [Confusion Matrix](results/visualizations/efficientnet_b0_confusion_matrix.png)
 
 The visualization pipeline is implemented in:
 
